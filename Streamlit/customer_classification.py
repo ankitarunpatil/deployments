@@ -52,7 +52,7 @@ else:
     st.write('Awaiting csv file to be uploaded')
     st.write(uploaded_file)
 
-load_clf = pickle.load(open('RandomForest_Classifier.pkl', 'rb'))
+load_clf = pickle.load(open('Streamlit/RandomForest_Classifier.pkl', 'rb'))
 
 prediction = load_clf.predict(input_df)
 prediction_proba = load_clf.predict_proba(input_df)
